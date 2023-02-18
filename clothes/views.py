@@ -50,3 +50,7 @@ def check_bookings(request, pk):
                 print(rent_from, rent_to)
                 messages.info(request, "Your Booking Was Successfull!!!")
                 return redirect('index')
+
+
+def create_booking(request):
+    return render(request, 'create_booking.html')
